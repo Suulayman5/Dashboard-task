@@ -10,7 +10,7 @@ import BarChartIcon from '@mui/icons-material/BarChart';
 import FilterListIcon from '@mui/icons-material/FilterList';
 import ViewColumnIcon from '@mui/icons-material/ViewColumn';
 
-const NavBar = () => {
+const Navbar = () => {
   return (
     <Box
       display="flex"

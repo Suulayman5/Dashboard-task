@@ -53,7 +53,7 @@ const Sidebar = () => {
           <Person2OutlinedIcon />
           <span>Contacts</span>
         </li>
-      </nav>
+      </nav>hdud
       <nav className="mt-4 space-y-2">
         <h2>Sales</h2>
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">

@@ -1,20 +1,31 @@
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import WorkIcon from '@mui/icons-material/Work';
 import ScheduleIcon from '@mui/icons-material/Schedule';
 import PushPinOutlinedIcon from '@mui/icons-material/PushPinOutlined';
 import RocketLaunchOutlinedIcon from '@mui/icons-material/RocketLaunchOutlined';
-import StarIcon from '@mui/icons-material/Star';
+import InsertDriveFileOutlinedIcon from '@mui/icons-material/InsertDriveFileOutlined';
 import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
-
-
-
+import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
+import WifiCallingOutlinedIcon from '@mui/icons-material/WifiCallingOutlined';
+import BookOutlinedIcon from '@mui/icons-material/BookOutlined';
+import RequestQuoteOutlinedIcon from '@mui/icons-material/RequestQuoteOutlined';
+import ReorderOutlinedIcon from '@mui/icons-material/ReorderOutlined';
+import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
+import SaveAsOutlinedIcon from '@mui/icons-material/SaveAsOutlined';
+import HomeRepairServiceOutlinedIcon from '@mui/icons-material/HomeRepairServiceOutlined';
 import DashboardCustomizeOutlinedIcon from '@mui/icons-material/DashboardCustomizeOutlined';
 import NoteAltOutlinedIcon from '@mui/icons-material/NoteAltOutlined';
-import InsertDriveFileOutlinedIcon from '@mui/icons-material/InsertDriveFileOutlined';
+import AttachMoneyOutlinedIcon from '@mui/icons-material/AttachMoneyOutlined';
+import FactCheckOutlinedIcon from '@mui/icons-material/FactCheckOutlined';
+
+import VolumeMuteOutlinedIcon from '@mui/icons-material/VolumeMuteOutlined';
+
 const Sidebar = () => {
   return (
     <aside className="w-52 text-gray-700 bg-gray-400 h-screen shadow-lg">
       <nav className="mt-4 space-y-2 p-2">
+        <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
+          <ReorderOutlinedIcon/>
+        </li>
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
           <HomeOutlinedIcon />
           <span>Home</span>
@@ -46,67 +57,70 @@ const Sidebar = () => {
       <nav className="mt-4 space-y-2">
         <h2>Customers</h2>
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <Person2OutlinedIcon />
+          <InsertDriveFileOutlinedIcon />
           <span>Accounts</span>
         </li>
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
           <Person2OutlinedIcon />
           <span>Contacts</span>
         </li>
-      </nav>hdud
+      </nav>
       <nav className="mt-4 space-y-2">
         <h2>Sales</h2>
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <HomeOutlinedIcon />
+          <WifiCallingOutlinedIcon />
           <span>Leads</span>
         </li>
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <WorkIcon />
+          <BookOutlinedIcon />
           <span>Opportunites</span>
         </li>
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <WorkIcon />
+          <PersonOutlinedIcon />
           <span>Competitors</span>
         </li>
       </nav>
       <nav className="mt-4 space-y-2">
         <h2>Collateral</h2>
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <HomeOutlinedIcon />
+          <RequestQuoteOutlinedIcon />
           <span>Quotes</span>
         </li>
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <WorkIcon />
+          <DescriptionOutlinedIcon />
           <span>Orders</span>
         </li>
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <WorkIcon />
+          <SaveAsOutlinedIcon />
           <span>Inovices</span>
         </li>
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <WorkIcon />
+          <HomeRepairServiceOutlinedIcon />
           <span>Products</span>
         </li>
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <WorkIcon />
+          <AttachMoneyOutlinedIcon />
           <span>Sales Literatures</span>
         </li>
       </nav>
       <nav className="mt-4 space-y-2">
         <h2>Marketing</h2>
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <HomeOutlinedIcon />
+          <FactCheckOutlinedIcon />
           <span>Marketing lists</span>
         </li>
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-whiterounded">
-          <WorkIcon />
+          <VolumeMuteOutlinedIcon />
           <span>Quick campaigns</span>
         </li>
       </nav>
       <nav className="mt-4 space-y-2">
         <h2>Sales</h2>
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <HomeOutlinedIcon />
+          <div className="bg-purple-500 p-1">
+
+          <AttachMoneyOutlinedIcon className=' text-white' />
+          </div>
           <span>Sales</span>
         </li>
       </nav>

@@ -4,8 +4,8 @@ import StarIcon from '@mui/icons-material/Star';
 
 const Sidebar = () => {
   return (
-    <aside className="w-64 bg-gray-800 text-white h-screen">
-      <nav className="mt-4 space-y-2">
+    <aside className="w-52 text-gray-700 bg-gray-400 h-screen shadow-lg">
+      <nav className="mt-4 space-y-2 p-2">
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-gray-700 rounded">
           <HomeIcon />
           <span>Home</span>

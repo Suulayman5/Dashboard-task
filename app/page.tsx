@@ -4,15 +4,24 @@ import { Topbar } from './components/Topbar';
 
 export default function Home() {
   return (
-      <div className='bg-gray-300'>
-        <Topbar/>
-        <div className="flex-1">
-        <Sidebar/>
-        </div>
-        <div className="flex-1">
-
-        <Navbar/>
-        </div>
+    <div className="flex flex-col h-screen bg-gray-300">
+    {/* Topbar */}
+    <Topbar />
+  
+    {/* Main Content Area */}
+    <div className="flex flex-1">
+      {/* Sidebar */}
+      <div className="w-52 mt--2">
+        <Sidebar />
       </div>
+  
+      {/* Navbar */}
+      <div className="flex-1">
+        <Navbar />
+        {/* Your other components can be added here */}
+      </div>
+    </div>
+  </div>
+  
   );
 }

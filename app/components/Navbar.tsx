@@ -1,7 +1,7 @@
 
 const Navbar = () => {
   return (
-    <div className=""></div>
+    <div className="text-gray-700">hjhggghbffdfghh</div>
   )
 };
 export default Navbar

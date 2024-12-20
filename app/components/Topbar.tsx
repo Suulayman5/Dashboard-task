@@ -3,9 +3,11 @@ import  LightbulbOutline  from '@mui/icons-material/Lightbulb';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import QuestionMarkOutlinedIcon from '@mui/icons-material/QuestionMarkOutlined';
 import PersonAddAltOutlinedIcon from '@mui/icons-material/PersonAddAltOutlined';
+import Profile from '../public/pexels-justin-shaifer-501272-1222271.jpg'
+import Image from 'next/image';
 export const Topbar = () => {
   return (
-    <section className='bg-blue-900 p-2 flex text-white text-center justify-between'>
+    <section className='bg-blue-900 p-2 py-3 flex text-white text-center justify-between'>
       <div className='flex  gap-2'>
         <p>Dynammics 365</p>
         <hr className='text-white w-2 h-2'/>
@@ -28,7 +30,7 @@ export const Topbar = () => {
           <PersonAddAltOutlinedIcon/>
         </div>
         <div className="">
-          <img src="" alt="image" />
+          <Image src={Profile} alt="image" width={40} height={40} className=' rounded-[100%]'/>
         </div>
       </div>
     </section>

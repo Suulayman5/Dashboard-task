@@ -9,7 +9,10 @@ export default function Home() {
         <div className="flex-1">
         <Sidebar/>
         </div>
+        <div className="flex-1">
+
         <Navbar/>
+        </div>
       </div>
   );
 }

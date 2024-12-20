@@ -21,7 +21,7 @@ import VolumeMuteOutlinedIcon from '@mui/icons-material/VolumeMuteOutlined';
 
 const Sidebar = () => {
   return (
-    <aside className="w-52 text-gray-700 bg-gray-400 h-screen shadow-lg">
+    <aside className="w-52 text-gray-700  h-full shadow-lg">
       <nav className="mt-4 space-y-2 p-2">
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
           <ReorderOutlinedIcon/>
@@ -55,7 +55,7 @@ const Sidebar = () => {
         </li>
       </nav>
       <nav className="mt-4 space-y-2">
-        <h2>Customers</h2>
+        <h2 className='font-bold px-4 text-black'>Customers</h2>
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
           <InsertDriveFileOutlinedIcon />
           <span>Accounts</span>
@@ -66,7 +66,7 @@ const Sidebar = () => {
         </li>
       </nav>
       <nav className="mt-4 space-y-2">
-        <h2>Sales</h2>
+        <h2 className='font-bold px-4 text-black'> Sales</h2>
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
           <WifiCallingOutlinedIcon />
           <span>Leads</span>
@@ -81,7 +81,7 @@ const Sidebar = () => {
         </li>
       </nav>
       <nav className="mt-4 space-y-2">
-        <h2>Collateral</h2>
+        <h2 className='font-bold px-4 text-black'>Collateral</h2>
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
           <RequestQuoteOutlinedIcon />
           <span>Quotes</span>
@@ -104,7 +104,7 @@ const Sidebar = () => {
         </li>
       </nav>
       <nav className="mt-4 space-y-2">
-        <h2>Marketing</h2>
+        <h2 className='font-bold px-4 text-black'>Marketing</h2>
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
           <FactCheckOutlinedIcon />
           <span>Marketing lists</span>
@@ -115,7 +115,7 @@ const Sidebar = () => {
         </li>
       </nav>
       <nav className="mt-4 space-y-2">
-        <h2>Sales</h2>
+        <h2 className='font-bold px-4 text-black'>Performance</h2>
         <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
           <div className="bg-purple-500 p-1">
 

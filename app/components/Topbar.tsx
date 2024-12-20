@@ -7,13 +7,13 @@ import Profile from '../public/pexels-justin-shaifer-501272-1222271.jpg'
 import Image from 'next/image';
 export const Topbar = () => {
   return (
-    <section className='bg-blue-900 p-2 py-3 flex text-white text-center justify-between'>
+    <section className='bg-blue-900 p-2 py-3 w-full flex text-white text-center justify-between'>
       <div className='flex  gap-2'>
         <p>Dynammics 365</p>
         <hr className='text-white w-2 h-2'/>
         <p>Sales hub</p>
       </div>
-      <div className='flex md:gap-6 gap-3'>
+      <div className='flex md:gap-6 gap-2'>
         <div className="">
           <LightbulbOutline/>
         </div>

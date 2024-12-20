@@ -4,7 +4,7 @@ import { Topbar } from './components/Topbar';
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen bg-gray-300">
+    <div className="flex flex-col h-screen md:w-[1500px] bg-gray-300">
     {/* Topbar */}
     <Topbar />
   

@@ -1,17 +1,22 @@
+import AddIcon from '@mui/icons-material/Add';
+import  LightbulbOutline  from '@mui/icons-material/Lightbulb';
 
-const Topbar = () => {
+export const Topbar = () => {
   return (
-    <div className='bg-blue-900 flex text-white text-center justify-between'>
+    <section className='bg-blue-900 p-2 flex text-white text-center justify-between'>
       <div className='flex gap-2'>
         <p>Dynammics 365</p>
-        <hr>
+        <hr/>
         <p>Sales hub</p>
       </div>
-      <div>
-
+      <div className='flex gap-2'>
+        <div className="">
+          <LightbulbOutline/>
+        </div>
+        <div className="">
+          <AddIcon/>
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
-
-export default Topbar

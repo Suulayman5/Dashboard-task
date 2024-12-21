@@ -46,7 +46,7 @@ const Dashboard = () => {
                 
               </div>
             </div>
-            <div className="bg-gray-200 p-2 rounded-lg mt-2">
+            <div className="bg-slate-200 p-2 rounded-lg mt-2">
             <div className="flex justify-between">
                 <span>Engage with Jane Reyes</span>
                 <div className="">
@@ -68,16 +68,18 @@ const Dashboard = () => {
                 <Image src={Photo2} alt="Allan Munger" width={4} height={6} className="w-12 h-12 rounded-full" />
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold">Prepare for meeting with Allan</h3>
-                  <p className="text-gray-500">Head of Real Estate Development - Contoso Coffee</p>
+                  <p className="text-gray-500 text-sm">Head of Real Estate Development - Contoso Coffee</p>
                 </div>
               </div>
-              <AutoAwesomeIcon className=' text-purple-500'/>
               
             </div>
-            <p className="text-gray-700 mt-4">
+            <div className="flex bg-slate-200 p-2 rounded-lg mt-2">
+            <span className="">
               Prepare for high-buying intent meeting Copilot scheduled for 2 PM regarding upgrading service contract.
-            </p>
-            <p className="text-gray-500 mt-2">Upcoming meeting - Due today</p>
+            </span>
+            <AutoAwesomeIcon className=' text-purple-500'/>
+            </div>
+            <p className="mt-4 text-gray-400 py-2 px-4 rounded">Upcoming meeting - Due today</p>
           </div>
           <div className=" rounded-lg shadow-md p-4 mb-4 md:w-1/3 md:m-4">
             <h3 className="text-lg font-semibold mb-4">Other key activities</h3>

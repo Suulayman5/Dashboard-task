@@ -3,17 +3,14 @@ import Icon from '../public/copilot-icon.png'
 
 const SearchList = () => {
   return (
-    <div className="p-4 bg-white">
-      {/* Search and Filter Bar */}
+    <div className="p-4 bg-gray-100 rounded-md m-3">
       <div className="flex items-center justify-between mb-4">
         <div className="relative w-full md:w-1/3">
-          {/* Input */}
           <input
             type="text"
             placeholder="Sort, filter and search and Copilot"
-            className="text-gray-800 w-full px-3 py-2 border border-blue-600 rounded-lg shadow-sm focus:outline-none "
+            className="text-gray-800 w-full px-3 py-2 border border-blue-600 rounded-md shadow-sm focus:outline-none "
           />
-          {/* Image */}
           <Image
             src={Icon}
             width={20}
@@ -93,6 +90,12 @@ const SearchList = () => {
                 topic: "Cafe A100 bulk rate",
                 status: "New",
                 createdOn: "3/13/2024 2:45 PM",
+              },
+              {
+                name: "Jane Reyes",
+                topic: "Improving  cost per cup",
+                status: "New",
+                createdOn: "3/10/2024 9:30 AM",
               },
             ].map((row, index) => (
               <tr

@@ -6,7 +6,7 @@ import SearchList from './components/SearchList';
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-full md:w-[1950px] bg-gray-300">
+    <div className="flex flex-col w-[700px] md:w-[1950px] bg-gray-300">
     {/* Topbar */}
     <Topbar />
   

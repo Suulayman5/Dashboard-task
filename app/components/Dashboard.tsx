@@ -1,14 +1,24 @@
 import Image from 'next/image';
 import Photo1 from '../public/pexels-andrea-bova-1169228-2883383.jpg'
 import Photo2 from '../public/pexels-arthousestudio-4621424.jpg'
+import Icon from '../public/copilot-icon.png'
+import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
+
+
 const Dashboard = () => {
   return (
-    <div className="p-6 bg-white text-gray-800 border border-blue-700 rounded-xl m-2">
+    <div className="p-6 shadow-2xl bg-white text-gray-800 border border-blue-700 rounded-xl m-3">
       {/* Header Section */}
       <div className="mb-8">
+        <div className="flex gap-2 text-center">
+            <div className="hidden md:block mt-1">
+
+            <Image src={Icon} width={20} height={21} alt='icon'/>
+            </div>
         <h2 className="text-xl font-bold">
           Hi Mona, <span className="text-blue-700">68% </span> of goal achieved and rest can be achieved by focusing on 20 top leads.
         </h2>
+        </div>
         <p className=" mt-4 md:mt-8">
           Copilot has pinpointed 20 key leads that show strong purchase intent and are actively engaging. These leads need your focus.
         </p>
@@ -23,11 +33,16 @@ const Dashboard = () => {
                   <h3 className="text-lg font-semibold">Jane Reyes</h3>
                   <p className="text-gray-500 mt-2">COO - Northwind Traders</p>
                 </div>
+                
               </div>
             </div>
             <div className="bg-gray-200 p-2 rounded-lg mt-2">
-            <div className="flex">
+            <div className="flex justify-between">
                 <span>Engage with Jane Reyes</span>
+                <div className="">
+
+                <AutoAwesomeIcon className=' text-purple-500'/>
+                </div>
             </div>
             <p className="text-gray-700 mt-2 ">
               Jane may be interested in upgrading espresso machines for her in-store coffee shops.
@@ -38,13 +53,14 @@ const Dashboard = () => {
           <div className=" rounded-lg shadow-md p-4 mb-4 md:w-1/3 md:m-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center">
-                <Image src={Photo2} alt="Allan Munger" width={4} height={4} className="w-12 h-12 rounded-full" />
+                <Image src={Photo2} alt="Allan Munger" width={4} height={6} className="w-12 h-12 rounded-full" />
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold">Prepare for meeting with Allan</h3>
                   <p className="text-gray-500">Head of Real Estate Development - Contoso Coffee</p>
                 </div>
               </div>
-              <button className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center">+</button>
+              <AutoAwesomeIcon className=' text-purple-500'/>
+              
             </div>
             <p className="text-gray-700 mt-4">
               Prepare for high-buying intent meeting Copilot scheduled for 2 PM regarding upgrading service contract.
@@ -61,7 +77,7 @@ const Dashboard = () => {
                 <h4 className="text-md font-semibold">Cafe A100 for Woodland Bank</h4>
                 <p className="text-gray-500">Review draft and reply to Chris Naido</p>
               </div>
-              <button className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center">+</button>
+              <AutoAwesomeIcon className=' text-purple-500'/>
             </div>
 
             <div className="flex items-center">
@@ -70,7 +86,7 @@ const Dashboard = () => {
                 <h4 className="text-md font-semibold">Partnership opportunity for Fabrikam</h4>
                 <p className="text-gray-500">Prepare for Fabrikams key stakeholder meeting</p>
               </div>
-              <button className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center">+</button>
+              <AutoAwesomeIcon className=' text-purple-500'/>
             </div>
           </div>
       </div>

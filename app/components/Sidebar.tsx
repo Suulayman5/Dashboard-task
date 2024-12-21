@@ -21,7 +21,7 @@ import VolumeMuteOutlinedIcon from '@mui/icons-material/VolumeMuteOutlined';
 
 const Sidebar = () => {
   return (
-    <aside className="w-52 text-gray-700  h-full shadow-lg">
+    <aside className="w-52 text-gray-700  h-full shadow-lg hidden md:block">
       <nav className=" p-2">
         <li className=" px-4 py-2 flex items-center space-x-2">
           <ReorderOutlinedIcon/>

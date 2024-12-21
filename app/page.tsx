@@ -12,7 +12,7 @@ export default function Home() {
     {/* Main Content Area */}
     <div className="flex flex-1">
       {/* Sidebar */}
-      <div className="w-52 mt--2">
+      <div className="">
         <Sidebar />
       </div>
   

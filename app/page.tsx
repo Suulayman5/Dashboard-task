@@ -2,6 +2,7 @@ import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import { Topbar } from './components/Topbar';
 import Dashboard from './components/Dashboard';
+import SearchList from './components/SearchList';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <div className="flex-1">
         <Navbar />
         <Dashboard/>
+        <SearchList/>
         {/* Your other components can be added here */}
       </div>
     </div>

@@ -10,7 +10,7 @@ export const Topbar = () => {
     <section className='bg-blue-900 p-2 py-3 w-full min-w-screen flex text-white text-center justify-between mr-3'>
       <div className='flex  gap-2'>
         <p>Dynammics 365</p>
-        <hr className='text-white w-2 h-2'/>
+        |
         <p>Sales hub</p>
       </div>
       <div className='flex md:gap-6 gap-2'>

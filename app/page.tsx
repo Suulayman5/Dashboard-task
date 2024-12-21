@@ -1,6 +1,7 @@
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import { Topbar } from './components/Topbar';
+import Dashboard from './components/Dashboard';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       {/* Navbar */}
       <div className="flex-1">
         <Navbar />
+        <Dashboard/>
         {/* Your other components can be added here */}
       </div>
     </div>

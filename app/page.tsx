@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import { Topbar } from './components/Topbar';
 import Dashboard from './components/Dashboard';
 import SearchList from './components/SearchList';
-import Model from './components/Model';
 
 export default function Home() {
   return (

@@ -8,11 +8,7 @@ import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 
-interface ModelProps {
-    onClose: () => void; // Function type for the onClose handler
-  }
-
-const Model = ({onClose}: ModelProps) => {
+const Model = () => {
   const [isOpen, setIsOpen] = useState(true);
 
   const closeModal = () => {
@@ -91,16 +87,16 @@ const Model = ({onClose}: ModelProps) => {
                     <h4 className="font-semibold text-lg mb-2">Why I picked this lead</h4>
                     <ul className="list-disc m-3 list-inside text-gray-600 space-y-1">
                         <li>
-                        Jane is a key decision maker and was browsing 'espresso
-                        machines' on First Coffee's website.
+                            Jane is a <strong>key decision maker</strong> and was browsing <strong>&apos;espresso
+                            machines&apos;</strong> on First Coffee&apos;s website.
                         </li>
                         <li>
-                        Multiple people at her company have reported 'slowness'
-                        during service requests.
+                            Multiple people at her company have reported &apos;slowness&apos;
+                            during <strong>service requests</strong>.
                         </li>
                         <li>
-                        Northwind Traders currently see $200M in revenue from their
-                        in-store coffee shops.
+                            Northwind Traders currently see <strong>$200M</strong> in revenue from their
+                            in-store coffee shops.
                         </li>
                     </ul>
                     </div>
@@ -146,11 +142,11 @@ const Model = ({onClose}: ModelProps) => {
                   Jane Reyes, the Chief Operating Officer of Northwind Traders,
                   is a dynamic leader with a proven track record in optimizing
                   operations and enhancing customer experiences. Under her
-                  guidance, Northwind Traders’ in-store coffee shops have
+                  guidance, Northwind Traders&apos; in-store coffee shops have
                   flourished, becoming a hallmark of quality and innovation.
-                  Jane’s commitment to excellence makes her an ideal partner for
+                  Jane&apos;s commitment to excellence makes her an ideal partner for
                   First Coffee. She is always seeking top-tier equipment to
-                  elevate her coffee shops’ offerings, ensuring consistent,
+                  elevate her coffee shops&apos; offerings, ensuring consistent,
                   high-quality service.
                 </p>
               </div>

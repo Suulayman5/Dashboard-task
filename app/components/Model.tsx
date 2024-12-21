@@ -2,11 +2,17 @@
 import { useState } from "react";
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import Photo1 from '../public/pexels-andrea-bova-1169228-2883383.jpg'
+import Photo2 from '../public/medal-.png'
+import Photo3 from '../public/Check-mark-icon-on-transparent-PNG.png'
 import Image from "next/image";
 import Linkedin from '../public/linkedin-logo.png'
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
+import SignalWifi4BarLockOutlinedIcon from '@mui/icons-material/SignalWifi4BarLockOutlined';
+import Photo4 from '../public/pie-chart.png'
+import ThumbUpAltOutlinedIcon from '@mui/icons-material/ThumbUpAltOutlined';
+import ThumbDownOffAltOutlinedIcon from '@mui/icons-material/ThumbDownOffAltOutlined';
 
 const Model = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -40,12 +46,6 @@ const Model = () => {
                 <div className="">
                     <div className="flex justify-between gap-16 w-[500px] ">
                         <p className="font-bold">Jane Reyes</p>
-                        <button
-                            className="md:hidden text-gray-500 hover:text-gray-700 "
-                            onClick={closeModal}
-                        >
-                            <CloseOutlinedIcon/>
-                        </button>
                     </div>
                   <p className="text-gray-700 text-sm flex gap-1"> <span><Image src={Linkedin} width={18} height={4} alt="linkedin icon"/></span> | COO, Northwind Traders</p>
                 </div>
@@ -82,56 +82,78 @@ const Model = () => {
 
               {/* Why I picked this lead */}
               <div className="bg-white p-3 m-3 rounded-2xl">
-                <div className="mt-4 rounded-2xl bg-gradient-to-r from-blue-100 to-purple-100">
-                    <div className="p-6 m-2">
-                    <h4 className="font-semibold text-lg mb-2">Why I picked this lead</h4>
-                    <ul className="list-disc m-3 list-inside text-gray-600 space-y-1">
-                        <li>
-                            Jane is a <strong>key decision maker</strong> and was browsing <strong>&apos;espresso
-                            machines&apos;</strong> on First Coffee&apos;s website.
-                        </li>
-                        <li>
-                            Multiple people at her company have reported &apos;slowness&apos;
-                            during <strong>service requests</strong>.
-                        </li>
-                        <li>
-                            Northwind Traders currently see <strong>$200M</strong> in revenue from their
-                            in-store coffee shops.
-                        </li>
-                    </ul>
+                <div className="mt-3 rounded-2xl bg-gradient-to-r from-violet-200 to-gray-100">
+                    <div className="p-6 mx-2">
+                        <h4 className="font-semibold text-lg mb-2 text-violet-800 md:ml-[-5px]">Why I picked this lead</h4>
+                        <ul className="list-disc list-inside    text-gray-600 space-y-1">
+                            <li>
+                                Jane is a <strong>key decision maker</strong> and was browsing <strong>&apos;espresso
+                                machines&apos;</strong> on First Coffee&apos;s website.
+                            </li>
+                            <li>
+                                Multiple people at her company have reported &apos;slowness&apos;
+                                during <strong>service requests</strong>.
+                            </li>
+                            <li>
+                                Northwind Traders currently see <strong>$200M</strong> in revenue from their
+                                in-store coffee shops.
+                            </li>
+                        </ul>
                     </div>
 
                     {/* Lead Stats */}
-                    <div className="mt-4 flex space-x-4">
-                    <div className="flex items-center space-x-2">
-                        <div className="bg-blue-100 text-blue-500 rounded-full p-2">
-                        📊
+                    <div className=" flex space-x-4 mt-[-8px] w-full md:w-[700px] md:gap-6">
+                    <div className="flex items-center space-x-2 bg-white ml-2 p-1 md:ml-4 mb-5 md:p-3 md:px-4 rounded-lg">
+                        <div className=" rounded-full p-2">
+                            <Image src={Photo3} width={10} height={5} alt="icon" className="w-8 h-8 rounded-full"/>
                         </div>
                         <div>
-                        <p className="text-sm font-semibold">Decision Maker</p>
-                        <p className="text-sm">Yes</p>
+                            <p className="text-sm md:text-md font-semibold">Decision Maker</p>
+                            <p className="text-lg text-violet-800 font-semibold">Yes</p>
                         </div>
                     </div>
-                    <div className="flex items-center space-x-2">
-                        <div className="bg-yellow-100 text-yellow-500 rounded-full p-2">
-                        💰
+                    <div className="flex items-center space-x-2 bg-white ml-2 p-1 md:ml-4 mb-5 md:p-3 md:px-4 rounded-lg">
+                        <div className=" rounded-full p-2">
+                            <Image src={Photo2} width={5} height={5} alt="icon" className="w-6 h-6 rounded-full"/>
                         </div>
                         <div>
-                        <p className="text-sm font-semibold">
-                            Potential Deal Value
-                        </p>
-                        <p className="text-sm">$1M</p>
+                            <p className="text-sm md:text-md font-semibold">
+                                 Potential Deal Value
+                            </p>
+                             <p className="text-lg text-violet-800 font-semibold">$1M</p>
                         </div>
                     </div>
-                    <div className="flex items-center space-x-2">
-                        <div className="bg-red-100 text-red-500 rounded-full p-2">
-                        📈
+                    <div className="flex items-center space-x-2 bg-white mr-2 p-2 mb-5 md:px-8 md:p-3 rounded-lg md:mr-3">
+                        <div className=" rounded-full p-2">
+                            📈
                         </div>
                         <div>
-                        <p className="text-sm font-semibold">Intent</p>
-                        <p className="text-sm">High</p>
+                            <p className="text-sm md:text-md font-semibold">Intent</p>
+                            <p className="text-lg text-violet-800 font-semibold">High</p>
                         </div>
                     </div>
+                    </div>
+                </div>
+                <div className="flex justify-between mt-3 md:mt-5">
+                    <div className="flex gap-2">
+                        <div className="flex bg-slate-100 p-2 shadow-md text-yellow-500 border">
+                        <SignalWifi4BarLockOutlinedIcon/>
+                        </div>
+                        <div className="md:flex hidden">
+                            <div className="bg-slate-100 p-2 shadow-md border-r-2 border-">1</div>
+                            <div className="bg-slate-100 p-2 shadow-md flex gap-1">
+                                <Image src={Photo4} width={10} height={5} alt="icon" className="w-4 h-4 rounded-ful mt-1"/>
+                                <span>D365 Sales</span>
+                            </div>
+                        </div>
+                        <div className="flex bg-slate-100 p-2 shadow-md border">+2</div>
+                    </div>
+                    <div className="flex gap-5">
+                        <p className="bg-slate-200 p-2 rounded-lg border">AI-generated content may not be incorrect</p>
+                        <div className="md:flex gap-3 hidden p-2">
+                        <ThumbUpAltOutlinedIcon/>
+                        <ThumbDownOffAltOutlinedIcon/>
+                        </div>
                     </div>
                 </div>
               </div>
@@ -155,6 +177,7 @@ const Model = () => {
             {/* Footer */}
             <div className="mt-4 flex justify-between items-center border-t pt-4 text-sm">
               <p className="text-gray-500">Showing 1 of 9</p>
+              |
               <button className="text-blue-500 hover:underline">Show all</button>
             </div>
           </div>

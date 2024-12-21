@@ -39,10 +39,10 @@ const Sidebar = () => {
           <ReorderOutlinedIcon />
         </button>
     {/* Sidebar */}
-      <aside
-        className={` shadow-lg z-40 transition-transform ${
-          isOpen ? "w-52" : "hidden"
-        } md:translate-x-0`}
+    <aside
+        className={` shadow-2xl md:static md:w-52 ${
+          isOpen ? "w-52 translate-x-0" : "hidden md:block"
+        }`}
       >
         <nav className=" p-2">
          

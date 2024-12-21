@@ -65,7 +65,7 @@ const Navbar = () => {
         </div>
         <div className="flex rounded-lg bg-blue-600 text-white p-2 text-center">
           <OpenInNewOutlinedIcon/>
-          <hr/>
+          <span className='ml-2'>|</span>
           <KeyboardArrowDownOutlinedIcon/>
         </div>
       </div>

@@ -1,3 +1,4 @@
+"use client"
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import ScheduleIcon from '@mui/icons-material/Schedule';
 import PushPinOutlinedIcon from '@mui/icons-material/PushPinOutlined';
@@ -18,113 +19,139 @@ import AttachMoneyOutlinedIcon from '@mui/icons-material/AttachMoneyOutlined';
 import FactCheckOutlinedIcon from '@mui/icons-material/FactCheckOutlined';
 
 import VolumeMuteOutlinedIcon from '@mui/icons-material/VolumeMuteOutlined';
+import { useState } from 'react';
 
 const Sidebar = () => {
-  return (
-    <aside className="w-52 text-gray-700  h-full shadow-lg hidden md:block">
-      <nav className=" p-2">
-        <li className=" px-4 py-2 flex items-center space-x-2">
-          <ReorderOutlinedIcon/>
-        </li>
-        <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <HomeOutlinedIcon />
-          <span>Home</span>
-        </li>
-        <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <ScheduleIcon />
-          <span>Recent</span>
-        </li>
-        <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <PushPinOutlinedIcon />
-          <span>Pinned</span>
-        </li>
-      </nav>
-      <nav className="mt-4 space-y-2">
-        <h2 className='font-bold px-4 text-black'>My work</h2>
-        <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <RocketLaunchOutlinedIcon />
-          <span>Sales accelerator</span>
-        </li>
-        <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <DashboardCustomizeOutlinedIcon />
-          <span>Dashboards</span>
-        </li>
-        <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <NoteAltOutlinedIcon />
-          <span>Activities</span>
-        </li>
-      </nav>
-      <nav className="mt-4 space-y-2">
-        <h2 className='font-bold px-4 text-black'>Customers</h2>
-        <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <InsertDriveFileOutlinedIcon />
-          <span>Accounts</span>
-        </li>
-        <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <Person2OutlinedIcon />
-          <span>Contacts</span>
-        </li>
-      </nav>
-      <nav className="mt-4 space-y-2">
-        <h2 className='font-bold px-4 text-black'> Sales</h2>
-        <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <WifiCallingOutlinedIcon />
-          <span>Leads</span>
-        </li>
-        <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <BookOutlinedIcon />
-          <span>Opportunites</span>
-        </li>
-        <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <PersonOutlinedIcon />
-          <span>Competitors</span>
-        </li>
-      </nav>
-      <nav className="mt-4 space-y-2">
-        <h2 className='font-bold px-4 text-black'>Collateral</h2>
-        <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <RequestQuoteOutlinedIcon />
-          <span>Quotes</span>
-        </li>
-        <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <DescriptionOutlinedIcon />
-          <span>Orders</span>
-        </li>
-        <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <SaveAsOutlinedIcon />
-          <span>Inovices</span>
-        </li>
-        <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <HomeRepairServiceOutlinedIcon />
-          <span>Products</span>
-        </li>
-        <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <AttachMoneyOutlinedIcon />
-          <span>Sales Literatures</span>
-        </li>
-      </nav>
-      <nav className="mt-4 space-y-2">
-        <h2 className='font-bold px-4 text-black'>Marketing</h2>
-        <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <FactCheckOutlinedIcon />
-          <span>Marketing lists</span>
-        </li>
-        <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-whiterounded">
-          <VolumeMuteOutlinedIcon />
-          <span>Quick campaigns</span>
-        </li>
-      </nav>
-      <nav className="mt-4 space-y-2">
-        <h2 className='font-bold px-4 text-black'>Performance</h2>
-        <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
-          <div className="bg-purple-500 p-1">
+  const [isOpen, setIsOpen] = useState(false);
 
-          <AttachMoneyOutlinedIcon className=' text-white' />
-          </div>
-          <span>Sales</span>
-        </li>
-      </nav>
-    </aside>
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className='text-gray-700'>
+    {/* Toggle Button */}
+    
+    <button
+          onClick={toggleSidebar}
+          className="md:hidden px-4 py-2"
+        >
+          <ReorderOutlinedIcon />
+        </button>
+    {/* Sidebar */}
+      <aside
+        className={` shadow-lg z-40 transition-transform ${
+          isOpen ? "w-52" : "hidden"
+        } md:translate-x-0`}
+      >
+        <nav className=" p-2">
+         
+          <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
+            <HomeOutlinedIcon />
+            <span>Home</span>
+          </li>
+          <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
+            <ScheduleIcon />
+            <span>Recent</span>
+          </li>
+          <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
+            <PushPinOutlinedIcon />
+            <span>Pinned</span>
+          </li>
+        </nav>
+        <nav className="mt-4 space-y-2">
+          <h2 className='font-bold px-4 text-black'>My work</h2>
+          <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
+            <RocketLaunchOutlinedIcon />
+            <span>Sales accelerator</span>
+          </li>
+          <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
+            <DashboardCustomizeOutlinedIcon />
+            <span>Dashboards</span>
+          </li>
+          <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
+            <NoteAltOutlinedIcon />
+            <span>Activities</span>
+          </li>
+        </nav>
+        <nav className="mt-4 space-y-2">
+          <h2 className='font-bold px-4 text-black'>Customers</h2>
+          <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
+            <InsertDriveFileOutlinedIcon />
+            <span>Accounts</span>
+          </li>
+          <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
+            <Person2OutlinedIcon />
+            <span>Contacts</span>
+          </li>
+        </nav>
+        <nav className="mt-4 space-y-2">
+          <h2 className='font-bold px-4 text-black'> Sales</h2>
+          <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
+            <WifiCallingOutlinedIcon />
+            <span>Leads</span>
+          </li>
+          <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
+            <BookOutlinedIcon />
+            <span>Opportunites</span>
+          </li>
+          <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
+            <PersonOutlinedIcon />
+            <span>Competitors</span>
+          </li>
+        </nav>
+        <nav className="mt-4 space-y-2">
+          <h2 className='font-bold px-4 text-black'>Collateral</h2>
+          <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
+            <RequestQuoteOutlinedIcon />
+            <span>Quotes</span>
+          </li>
+          <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
+            <DescriptionOutlinedIcon />
+            <span>Orders</span>
+          </li>
+          <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
+            <SaveAsOutlinedIcon />
+            <span>Inovices</span>
+          </li>
+          <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
+            <HomeRepairServiceOutlinedIcon />
+            <span>Products</span>
+          </li>
+          <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
+            <AttachMoneyOutlinedIcon />
+            <span>Sales Literatures</span>
+          </li>
+        </nav>
+        <nav className="mt-4 space-y-2">
+          <h2 className='font-bold px-4 text-black'>Marketing</h2>
+          <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
+            <FactCheckOutlinedIcon />
+            <span>Marketing lists</span>
+          </li>
+          <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-whiterounded">
+            <VolumeMuteOutlinedIcon />
+            <span>Quick campaigns</span>
+          </li>
+        </nav>
+        <nav className="mt-4 space-y-2">
+          <h2 className='font-bold px-4 text-black'>Performance</h2>
+          <li className=" px-4 py-2 flex items-center space-x-2 hover:bg-white rounded">
+            <div className="bg-purple-500 p-1">
+
+            <AttachMoneyOutlinedIcon className=' text-white' />
+            </div>
+            <span>Sales</span>
+          </li>
+        </nav>
+      </aside>
+    {isOpen && (
+        <div
+          onClick={toggleSidebar}
+          className=" md:hidden"
+        ></div>
+      )}
+    </div>
   );
 };
 export default Sidebar

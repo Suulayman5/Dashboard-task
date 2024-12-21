@@ -104,10 +104,10 @@ const SearchList = () => {
                   <td className=" py-2 text-sm">
                   <input type="checkbox" />
                 </td>
-                <td className="px-4 py-2 text-sm text-gray-700 border-b-2">{row.name}</td>
-                <td className="px-4 py-2 text-sm text-gray-700 border-b-2">{row.topic}</td>
-                <td className="px-4 py-2 text-sm text-gray-700 border-b-2">{row.status}</td>
-                <td className="px-4 py-2 text-sm text-gray-700 border-b-2">{row.createdOn}</td>
+                <td className="px-4 py-3 text-sm text-gray-700 border-b-2">{row.name}</td>
+                <td className="px-4 py-3 text-sm text-gray-700 border-b-2">{row.topic}</td>
+                <td className="px-4 py-3 text-sm text-gray-700 border-b-2">{row.status}</td>
+                <td className="px-4 py-3 text-sm text-gray-700 border-b-2">{row.createdOn}</td>
               </tr>
             ))}
           </tbody>

@@ -29,7 +29,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className='text-gray-700'>
+    <div className='text-gray-700 min-h-screen'>
     {/* Toggle Button */}
     
     <button

@@ -12,7 +12,7 @@ import OpenInNewOutlinedIcon from '@mui/icons-material/OpenInNewOutlined';
 
 const Navbar = () => {
   return (
-    <div className="text-gray-700 p-3 m-3 md:w-[1700px] rounded-lg shadow-lg bg-white flex justify-between">
+    <div className="text-gray-700 p-3 m-3 w-full rounded-lg shadow-lg bg-white flex justify-between">
       <div className="flex justify-center text-center">
         <span>My open leads</span>
         <KeyboardArrowDownOutlinedIcon className='cursor-pointer'/>

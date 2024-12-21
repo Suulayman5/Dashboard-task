@@ -5,7 +5,7 @@ import Dashboard from './components/Dashboard';
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen md:w-[1500px] bg-gray-300">
+    <div className="flex flex-col h-full md:w-[1950px] bg-gray-300">
     {/* Topbar */}
     <Topbar />
   

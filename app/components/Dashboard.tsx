@@ -14,7 +14,7 @@ const Dashboard = () => {
         </p>
       </div>
 
-      <div className="md:flex flex-col w-full">
+      <div className="md:flex md:flex-row flex-col w-full">
           <div className=" rounded-lg shadow-md p-4 mb-4 md:w-1/3 md:m-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center">
@@ -56,7 +56,7 @@ const Dashboard = () => {
             <hr className="border-gray-200 mb-4" />
 
             <div className="flex items-center mb-4md:m-3">
-              <Image src="https://via.placeholder.com/50" width={4} height={4} alt="Cafe A100" className="w-12 h-12 rounded-full" />
+              <Image src={Photo2} width={4} height={4} alt="Cafe A100" className="w-12 h-12 rounded-full" />
               <div className="ml-4 flex-1">
                 <h4 className="text-md font-semibold">Cafe A100 for Woodland Bank</h4>
                 <p className="text-gray-500">Review draft and reply to Chris Naido</p>
@@ -65,7 +65,7 @@ const Dashboard = () => {
             </div>
 
             <div className="flex items-center">
-              <Image src="https://via.placeholder.com/50" width={4} height={4} alt="Fabrikam" className="w-12 h-12 rounded-full" />
+              <Image src={Photo1} width={4} height={4} alt="Fabrikam" className="w-12 h-12 rounded-full" />
               <div className="ml-4 flex-1">
                 <h4 className="text-md font-semibold">Partnership opportunity for Fabrikam</h4>
                 <p className="text-gray-500">Prepare for Fabrikams key stakeholder meeting</p>
